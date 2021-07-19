@@ -1,5 +1,7 @@
-pipeline{
-  agent any 
+pipeline{agent any 
+    tools {
+     		gradle "gradle-4.0"
+    }
     stages{
        stage('SCM'){
 	       steps{
