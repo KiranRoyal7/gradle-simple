@@ -8,7 +8,7 @@ pipeline{agent any
 	}
 	stage('Build'){
 		steps{
-			sh './gradlew build'
+			sh './gradlew build --warning-mode all'
 		}
 	}
 }
